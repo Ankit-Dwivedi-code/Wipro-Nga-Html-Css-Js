@@ -1,0 +1,126 @@
+/* Reset default margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+/* Info Section */
+.my-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.my-info img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #333;
+    margin-bottom: 10px;
+}
+
+.my-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Paragraph */
+p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Skills List */
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+ul {
+    max-width: 400px;
+    margin: 10px auto 30px auto;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Contact */
+#contact {
+    margin-top: 40px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .my-info img {
+        width: 120px;
+        height: 120px;
+    }
+
+    p, ul {
+        font-size: 16px;
+    }
+}
