@@ -63,8 +63,8 @@
     <!-- Admission form -->
     <div class="container mt-5">
         <h3>Admission Form</h3>
-        <div id="admissionform"></div>
-        <form>
+        <div id="alertBox"></div>
+        <form id="admissionForm">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
@@ -72,6 +72,10 @@
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="tel" class="form-control" id="contact" placeholder="Enter your contact number" required>
             </div>
             <div class="form-group">
                 <label for="course">Select Course:</label>
@@ -90,18 +94,18 @@
     </div>
     <!-- For alert we will use javascript -->
      <!-- Javascript -->
-      <script>
+      <!-- <script>
         // const form = document.getElementById('admissionform');
         const form = document.querySelector('form'); // Select the form element
 
-        const submittedData = document.getElementById('submittedData');
+        const submittedData = document.getElementById('submittedData');  // selecting the div to display submitted data
 
         form.addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission
 
             // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
             const course = document.getElementById('course').value;
 
             // Display submitted data
@@ -113,7 +117,8 @@
             alert("Form submitted successfully!"); // Alert message
             });
 
-      </script>
+      </script> -->
+      <script src="script.js"></script>
 
 </body>
 </html>
