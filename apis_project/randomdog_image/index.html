@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random dog Image</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #dogImageContainer {
+        width: 400px;
+        height: 300px;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #ccc;
+        border-radius: 12px;
+        background: #f9f9f9;
+        overflow: hidden;
+    }
+    #dogImageContainer img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }  
+    button:hover {
+        background-color: #45a049;
+        transform: scale(1.05);
+    }
+</style>
+
+</head>
+<body>
+    <h1>Get random dog image on every click</h1>
+    <button id="fetchDogBtn">Fetch Dog Image</button>
+    <div id="dogImageContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
