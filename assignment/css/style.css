@@ -1,0 +1,30 @@
+/* Default light mode */
+body.light-mode {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.hero-section {
+  background-color: #e9f5ff;
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar,
+body.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .hero-section {
+  background-color: #2c2c2c;
+}
+
+body.dark-mode .card {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border: 1px solid #444;
+}
